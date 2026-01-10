@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CT Makofane Portfolio</title>
+        <link rel="icon" type="image/png" href="./assets/logo.png">
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+
+    <body>
+        <!-- Desktop Navigation -->
+        <nav id="desktop-nav">
+            <!--div class="logo">C.T. Makofane</div>-->
+
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav id="hamburger-nav">
+            <div class="logo">Confidence Thapelo Makofane</div>
+
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Sections -->
+
+        <section id="profile">
+            <!-- Profile Section -->
+
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Confidence Thapelo Makofane Profile Picture" />            
+            </div>
+
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Confidence Thapelo Makofane</h1>
+                <p class="section__text__p2">Solutions Architect</p>
+
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2" 
+                        onclick="window.open('./assets/CT.MakofaneResume.pdf', '_blank')">
+                        Download Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+
+                <div id="socials-container">
+                    <img 
+                        src="/assets/linkedin.png" 
+                        alt="My LinkedIn profile" 
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/confidence-thapelo-makofane-2501b724b/'" 
+                    />
+                    <img 
+                        src="/assets/github.png" 
+                        alt="My GitHub Profile" 
+                        class="icon" 
+                        onclick="location.href='https://github.com/confidencemckay'" 
+                    />
+                </div>
+            </div>
+
+        </section>
+    
+        <section id="about">
+            <!-- About Section -->
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img 
+                        src="./assets/about-pic.png"
+                        alt="Profile picture"
+                        class="about-pic"
+                    />
+                </div>           
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Education icon" 
+                            class="icon" 
+                        />
+                        <h3>Education</h3>
+                        <p1>BCom: Economics and Informatics</p1> 
+                    </div>
+                </div>
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <p>I am a BCom Economic Sciences (Economics & Informatics) graduate from North-West University, driven by the challenge of designing 
+                            integrated systems that bridge the gap between technical infrastructure and economic strategy. My professional journey is rooted 
+                            in a unique combination of "on-the-ground" commercial experience—beginning in my family’s Spaza shop—and high-level academic training 
+                            in Information Systems and Economic Theory. <br /> <br />
+                            Currently, I specialize in the development of automated quantitative trading systems. I leverage my background in IT 
+                            and Economics to build and deploy trading bots that translate complex market indicators and trading strategies into executable logic. This work allows me to 
+                            practice the core tenets of a Solutions Architect: designing robust frameworks, managing data integrity, and ensuring technical solutions align with financial goals.<br /> <br />
+                            My long-term objective is to transition into Solutions Architecture, where I can design end-to-end ecosystems that solve complex 
+                            organizational challenges. Whether I am analyzing data trends, optimizing software workflows, or managing economic risk, I approach 
+                            every project with a focus on scalability, efficiency, and the strategic integration of technology.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Quote: Raymond Reddington-->
+                <p class="section__text__p1">"I am a practioner of the art of the possible"</p>
+            </div>
+
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow" 
+                onclick="location.href='./#experience'"
+            />
+
+        </section>
+
+        <section id="experience">
+            <!-- About Section -->
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience and Skills</h1>
+
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Technical & Engineering</h2>
+                        <div class="article-container">
+                            <article>                              
+                                <div>
+                                    <h3>Algorithmic Development</h3>
+                                    <p>Signal & Feature Engineering, Systematic Strategy Development, Backtesting & Optimization, and Deployment & Monitoring</p>
+                                </div>
+                            </article>
+                            <article>                               
+                                <div> 
+                                    <h3>Data Science</h3>
+                                    <p>Data Cleaning & ETL, Predictive Analytics, Quantitative Modelling, Statistical Inference, and Visualization and Reporting (EViews, PowerBI, Tableau)</p>
+                                </div>
+                            </article>
+                            <article>            
+                                <div>
+                                    <h3>Programming</h3>
+                                    <p>Databases (SQL), Data Science (C++, Python), Financial (MQL5), and Web Development (C# .NET & MVC, HTML & CSS, JavaScript, JSON)</p>
+                                </div>
+                            </article>                            
+                            <article>                               
+                                <div>
+                                    <h3>System Analysis and Design</h3>
+                                    <p>Requirements Extraction and Modelling, Data and Process Modeling, & Information Systems Architecture</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Systems and Architecture</h3>
+                                    <p>Decision Logic Design, Requirements Engineering, SDLC Management, System Integration, Scalability Planning, and Technical Documentation</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Economics & Risk</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <h3>Bank Risk Management</h3>
+                                    <p>Banking regulatory environment, Banking Financial Performance management, and Financial System structure</p>
+                                </div>
+                            </article>                             
+                            <article>
+                                <div>
+                                    <h3>Economic Theory and Market Dynamics</h3>
+                                    <p>Micro/Macro-economic principles, Supply-Demand shifts, and Global Market Structures</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Econometric Research</h3>
+                                    <p>Regression Analysis and Modelling, and Estimation and Hypothesis Testing</p>
+                                </div>
+                            </article>  
+                            <article>
+                                <div>
+                                    <h3>Investment Management</h3>
+                                    <p>Capital and Money Market structures, Derivative Instruments structures, Equity Analysis, and Portfolio Management</p>
+                                </div>
+                            </article>                                                        
+                            <article>
+                                <div>
+                                    <h3>Risk Management and Mitigation</h3>
+                                    <p>Assessment, identification, and mitigation of financial and operational risks</p>
+                                </div>
+                            </article>                                             
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Soft Skills</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <h3>Adaptability and Resilience</h3>
+                                    <p>An ability to master new, complex fields and navigate their environments</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Critical Thinking</h3>
+                                    <p>A disciplined process of objectively evaluating information and logic before reaching a conclusion</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Problem Solving</h3>
+                                    <p>A solution-oriented approach to overcoming technical and economic hurdles</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Quantitative Ethics</h3>
+                                    <p>A steadfast commitment to integrity and transparency in both technical and financial practices</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Strategic Growth</h3>
+                                    <p>A commitment to long-term scalability and continuous improvement</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow" 
+                onclick="location.href='./#projects'"
+            />
+        </section>
+
+        <section id="projects">
+            <!-- Projects Section -->
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+
+                <div class="about-containers">
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-1.jpg"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Smart Money Concepts Trading Bot (MT5)</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/confidencemckay/TradeSoft_SMC_Trading_Bot'"
+                            >
+                            Github Repository
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-2.png"
+                                alt="Project 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Customer Churn Prediction Model</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/confidencemckay/CodSoft-Machine-Learning-Internship/tree/main/Task_3'"
+                            >
+                            Github Repository
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-3.png"
+                                alt="Project 3"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Health Appointment Management System</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/confidencemckay/NWU-Information-System-Assignment'"
+                            >
+                            Github Repository
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class="btn btn-color-1 project-btn-1"
+                    onclick="location.href='https://github.com/confidencemckay/'"
+                    >
+                    See more here
+                </button>                
+            
+            </div>
+            
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow" 
+                onclick="location.href='./#contact'"
+            />
+        </section>
+
+        <section id="contact">
+            <!-- Contact Section -->
+
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                        src="/assets/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                    >
+                    <p><a href="mailto:makofane.ct@gmail.com">makofane.ct@gmail.com</a></p>
+                </div>
+
+                <div class="contact-info-container">
+                    <img 
+                        src="/assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                    >
+                    <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer id="footer">
+            <!-- Footer Section -->
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2026 C.T. Makofane. All Rights Reserved.</p>
+        
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
