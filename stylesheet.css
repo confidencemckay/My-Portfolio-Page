@@ -481,3 +481,85 @@ footer p {
     cursor: pointer;
     height: 2rem;
 }
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* For Tablets and Small Laptops */
+@media screen and (max-width: 1200px) {
+    section {
+        margin: 0 5%; /* Reduce large side margins */
+    }
+    nav {
+        margin: 2rem 2rem; /* Remove the 35rem margin */
+    }
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 600px) {
+    /* Reset fixed heights so content can flow naturally */
+    section, #profile, #about, #experience, #projects, #contact {
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 0 1rem 2rem 1rem;
+        display: block;
+    }
+
+    /* Navigation Adjustment */
+    nav {
+        display: none; /* Hide desktop nav */
+    }
+
+    #hamburger-nav {
+        display: flex; /* Show your hamburger nav */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        height: 10vh;
+    }
+
+    /* Stack Flex Containers Vertically */
+    .section-container, 
+    #profile, 
+    .about-containers, 
+    .contact-info-upper-container {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+
+    /* Resize Images for Mobile */
+    .section__pic-container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .about-pic {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Adjust Text Sizes */
+    .title {
+        font-size: 2rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+
+    /* Experience & Projects Grid */
+    .article-container {
+        grid-template-columns: 1fr; /* Stack articles in one column */
+    }
+
+    .arrow {
+        display: none; /* Arrows often break mobile layouts */
+    }
+
+    .contact-info-container p {
+        font-size: 1rem;
+    }
+
+}
