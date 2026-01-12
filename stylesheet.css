@@ -496,6 +496,9 @@ footer p {
 
 /* For Mobile Phones */
 @media screen and (max-width: 600px) {
+    body {
+        background-image: url("assets/background-mobile.png");
+    }
     /* Reset fixed heights so content can flow naturally */
     section, #profile, #about, #experience, #projects, #contact {
         height: auto;
