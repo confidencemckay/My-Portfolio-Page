@@ -497,8 +497,33 @@ footer p {
 /* For Mobile Phones */
 @media screen and (max-width: 600px) {
     body {
-        background-image: url("assets/background-mobile.png");
+        /*background-image: url("assets/background-mobile.png");*/
+        background: none;
     }
+
+/* Create a "Ghost Layer" for the background */
+body::before {
+    content: "";
+    position: fixed; /* This keeps it from scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Your Image Settings */
+    background-image: url("assets/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* This puts it behind your content */
+    z-index: -1; 
+    
+    /* Hardware acceleration to keep it crisp */
+    will-change: transform;
+    transform: translateZ(0);
+}
+
     /* Reset fixed heights so content can flow naturally */
     section, #profile, #about, #experience, #projects, #contact {
         height: auto;
